@@ -1,1 +1,8 @@
-[['b','b','B','w','w','w','w'],['w','w','w','w','w','b','b'],['w','b','w','w','w','C','w',],['w','w','w','b','w','b','w',],['w','w','w','b','w','b','w',],['b','w','b','w','w','b','w',],['b','w','b','w','b','b','w',],['w','A','w','w','w','D','w',]]
+b,b,B,w,w,w,w
+w,w,w,w,w,b,b
+w,b,w,w,w,C,w
+w,w,w,b,w,b,w
+w,w,w,b,w,b,w
+b,w,b,w,w,b,w
+b,w,b,w,b,b,w
+w,A,w,w,w,D,w
