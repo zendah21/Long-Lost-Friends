@@ -73,8 +73,6 @@ def get_estimated_remaining_distance(current_index,target,the_map):
 if __name__ == '__main__':
 
     the_map = get_map(FILENAME)
-
-
     print(get_index_of('A',the_map))
 
 
