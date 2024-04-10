@@ -51,7 +51,8 @@ def A_search(the_map):
     # assume that path = [nodeA, nodeB, length]
     queue = []
     start_index = get_index_of('A', the_map)
-    main_path = [[0, 0, 0]]
+    main_path = [[start_index[0], start_index[1], 0]]
+    queue.append(main_path)
     while not len(queue) == 0:
         if the_map(main_path[0], main_path[1]) in ['A', 'B', 'C', 'D'] :
             return 'success'
