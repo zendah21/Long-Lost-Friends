@@ -7,11 +7,7 @@ import queue as Queue
 FILENAME = "sources.txt"
 def get_map(filename=FILENAME):
     file = open(filename,"r")
-    the_map =[]
-    lines = file.read()
-    rows = lines.split('\n')
-    for row in rows:
-        the_map.append(row.split(','))
+    the_map = file.read().split('\n')
     return the_map
 
 def extend_path(main_path):
@@ -64,11 +60,18 @@ def A_search(the_map):
             queue.append(extended_path)
 
 
-
-
+def get_index_of(robot,the_map):
+    for row in range(len(the_map)):
+        if robot in the_map[row]:
+            return row,the_map[row].index('A')
 
 if __name__ == '__main__':
 
     the_map = get_map(FILENAME)
+
+
+    print(get_index_of('A',the_map))
+
+
 
 
