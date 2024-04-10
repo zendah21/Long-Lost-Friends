@@ -50,7 +50,7 @@ def move_rightwards(path_list):
 def A_search(the_map):
     # assume that path = [nodeA, nodeB, length]
     queue = []
-    start_index = the_map.index('A')
+    start_index = get_index_of('A', the_map)
     main_path = [[0, 0, 0]]
     while not len(queue) == 0:
         if the_map(main_path[0], main_path[1]) in ['A', 'B', 'C', 'D'] :
