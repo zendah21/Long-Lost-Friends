@@ -9,8 +9,9 @@ def get_map(filename=FILENAME):
     file = open(filename,"r")
     the_map =[]
     lines = file.read()
-    rows = lines.split(',')
-    print(rows)
+    rows = lines.split('\n')
+    for row in rows:
+        the_map.append(row.split(','))
     return the_map
 
 def extend_path(main_path):
