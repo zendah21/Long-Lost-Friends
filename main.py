@@ -66,6 +66,10 @@ def get_index_of(robot,the_map):
         if robot in the_map[row]:
             return row,the_map[row].index('A')
 
+def get_estimated_remaining_distance(current_index,target,the_map):
+    target_index=get_index_of(target,the_map)
+    return sum( target_index[0]-current_index[0] ,target_index[1]-current_index[1])
+
 if __name__ == '__main__':
 
     the_map = get_map(FILENAME)
